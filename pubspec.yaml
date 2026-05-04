@@ -1,4 +1,4 @@
-name: agrosafe
+name: avocadoguard
 description: Application AgroSafe - Diagnostic végétal et surveillance IoT
 
 publish_to: 'none'
@@ -13,7 +13,6 @@ dependencies:
   csv: ^7.2.0 # pour pouvoir exporter au format .csv
   firebase_auth: ^5.0.0 # pour accéder à la fonctionnalité Authentification de Firebase
   firebase_core: ^3.0.0 # pour accéder au projet Firebase
-  #firebase_messaging: ^15.0.0 # pour les notifications push
   firebase_database: ^11.3.10 # pour accéder à la base de donnée Firebase Realtime
   fl_chart: ^1.1.1
   flutter:
@@ -22,15 +21,12 @@ dependencies:
     sdk: flutter
   flutter_dotenv: ^6.0.1 # pour le fichier .env
   flutter_local_notifications: ^21.0.0 # pour les langues
-  flutter_hooks: ^0.18.0
   google_fonts: ^6.1.0 # pour les polices
-  hooks_riverpod: ^2.1.1
-  image_picker: ^1.2.1
   intl: any
   path_provider: ^2.1.2
   primer_progress_bar: ^0.4.0
+  share_plus: ^13.1.0
   shared_preferences: ^2.0.0
-  tflite_v2: ^1.0.0
   web: ^1.1.1
   
 
