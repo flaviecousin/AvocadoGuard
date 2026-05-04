@@ -11,3 +11,10 @@ Flutter Application for real-time monitoring of avocado storage conditions (temp
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
 ![Makefile](https://img.shields.io/badge/Makefile-427819?style=for-the-badge&logo=gnu&logoColor=white)
+
+## Preview
+## Architecture
+## Prerequisites and installation
+## Configuration
+## Features
+## Project structure
