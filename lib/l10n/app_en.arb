@@ -40,6 +40,7 @@
   "confirmationMdp": "Please confirm your password",
   "profilPref": "Favorite profile:",
   "profilChoix": "Please, choose your favorite profile",
+  "agriculteur": "🌿 Farmer",
   "gestionnaire": "📦 Stock manager",
   "needEmail": "Email needed",
   "invalidEmail": "Format of the email invalid",
@@ -79,6 +80,7 @@
   "temperatureMax": "Max temperature",
   "humidityMax": "Max humidity",
   "co2Max": "Max CO₂",
+  "seuilsParDefaut": "Default thresholds",
   "@_MODULE2_HISTORIQUE":{
     "description": "------ PAGE D'HISTORIQUE ------"
   },
@@ -134,6 +136,7 @@
   },
   "userScreenTitle": "User",
   "nonDefini": "Not defined",
+  "agri": "Farmer",
   "gestionn": "Stock manager",
   "pbProfil": "Profile not defined",
   "emailVerification": "Verification email sent",
@@ -156,5 +159,5 @@
   "alerteTemp": "Temperature high",
   "alerteHumid": "Humidity high",
   "alerteco2": "CO₂ high",
-  "capteurOff": "Offline Captor",
+  "capteurOff": "Offline Captor"
 }

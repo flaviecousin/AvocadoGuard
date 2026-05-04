@@ -18,22 +18,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get voirDashboard => 'Voir le dashboard';
 
   @override
-  String get dashboardIot => 'Dashboard IoT';
-
-  @override
-  String get voirScan => 'Voir les scans →';
-
-  @override
-  String get lastScan => 'Dernier scan : ';
-
-  @override
-  String get detectionMaladie => 'Détection Alternaria';
-
-  @override
   String get home => 'Accueil';
-
-  @override
-  String get module1 => 'Module 1';
 
   @override
   String get module2 => 'Module 2';
@@ -159,7 +144,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get now => 'à l\'instant';
 
   @override
-  String get ventilationChambreFroide => 'Vérifiez la ventilation de la chambre froide.';
+  String get ventilationChambreFroide =>
+      'Vérifiez la ventilation de la chambre froide.';
 
   @override
   String get display => 'affichage toutes les';
@@ -208,6 +194,9 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get co2Max => 'CO₂ max';
+
+  @override
+  String get seuilsParDefaut => 'Seuils par défaut';
 
   @override
   String get historique => 'Historique';
@@ -321,13 +310,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get settings => 'SETTINGS';
 
   @override
-  String get moduleTitleProfil => '🌿 Module 1 - Diagnostic Végétal';
-
-  @override
   String get module2TitleProfil => '📦 Module 2 - IoT';
-
-  @override
-  String get fusionIaIoT => '🔗 Fusion : IA + IoT';
 
   @override
   String get voirProfil => 'Voir mon profil →';
@@ -337,9 +320,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get anglais => 'Anglais';
-
-  @override
-  String get slogan => 'SÉCURISER. SURVEILLER. PROTÉGER.';
 
   @override
   String get userScreenTitle => 'Utilisateur';
@@ -369,9 +349,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get douteux => 'Douteux';
 
   @override
-  String get infecte => 'Infecté';
-
-  @override
   String get danger => 'Danger';
 
   @override
@@ -394,34 +371,4 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get capteurOff => 'Capteur hors ligne';
-
-  @override
-  String get fusionTitle => 'Fusion IA + IoT';
-
-  @override
-  String get correlation => 'Vue Corrélée';
-
-  @override
-  String get plantsDouteux => 'PLANTS DOUTEUX';
-
-  @override
-  String get plantsDanger => 'PLANTS EN DANGER';
-
-  @override
-  String get alertesIoT => 'ALERTES';
-
-  @override
-  String get totalScans => 'TOTAL SCANS';
-
-  @override
-  String get seuilsParDefaut => 'Seuils par défaut';
-
-  @override
-  String get alerteTemp2 => 'ALERTES TEMPÉRATURE';
-
-  @override
-  String get alerteHR => 'ALERTES HUMIDITÉ';
-
-  @override
-  String get alerteCO2 => 'ALERTES CO₂';
 }

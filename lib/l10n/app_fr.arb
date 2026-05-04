@@ -40,6 +40,7 @@
   "confirmationMdp": "Veuillez confirmer votre mot de passe",
   "profilPref": "Profil préféré :",
   "profilChoix": "Veuillez choisir votre profil préféré",
+  "agriculteur": "🌿 Agriculteur",
   "gestionnaire": "📦 Gestionnaire de stockage",
   "needEmail": "Email requis",
   "invalidEmail": "Format email invalide",
@@ -79,6 +80,7 @@
   "temperatureMax": "Température max",
   "humidityMax": "Humidité max",
   "co2Max": "CO₂ max",
+  "seuilsParDefaut": "Seuils par défaut",
   "@_MODULE2_HISTORIQUE":{
     "description": "------ PAGE D'HISTORIQUE ------"
   },
@@ -134,6 +136,7 @@
   },
   "userScreenTitle": "Utilisateur",
   "nonDefini": "Non défini",
+  "agri": "Agriculteur",
   "gestionn": "Gestionnaire de stockage",
   "pbProfil": "Profil non défini",
   "emailVerification": "Email de vérification envoyé",
@@ -156,5 +159,5 @@
   "alerteTemp": "Température élevée",
   "alerteHumid": "Humidité élevée",
   "alerteco2": "CO₂ élevé",
-  "capteurOff": "Capteur hors ligne",
+  "capteurOff": "Capteur hors ligne"
 }

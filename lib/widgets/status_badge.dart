@@ -1,6 +1,5 @@
 // Importation de la bibliothèque et des fichiers nécessaires
 import 'package:flutter/material.dart';
-import 'package:avocadoguard/core/models/scan_risk.dart';
 import 'package:avocadoguard/core/theme/app_theme.dart';
 import 'package:avocadoguard/l10n/app_localizations.dart'; // pour accéder à la traduction des textes
 
@@ -33,13 +32,6 @@ class StatusBadge extends StatelessWidget {
     textColor: AgrosafeTheme.warning,
   );
 
-  factory StatusBadge.danger(BuildContext context) => StatusBadge(
-    // Raccourci du badge INFECTÉ (module 1)
-    label: AppLocalizations.of(context)!.infecte, // Texte en fonction de la variable locale de langue
-    backgroundColor:AgrosafeTheme.dangerPastel,
-    textColor: AgrosafeTheme.danger,
-  );
-
   factory StatusBadge.danger2(BuildContext context) => StatusBadge(
     // Raccourci du badge DANGER (module 2)
     label: AppLocalizations.of(context)!.danger, // Texte en fonction de la variable locale de langue
@@ -47,17 +39,6 @@ class StatusBadge extends StatelessWidget {
     textColor: AgrosafeTheme.danger,
   );
   
-  factory StatusBadge.fromRisk(ScanRisk risk, BuildContext context) {
-    // Permet d'appeler le bon badge en fonction du risque (module 1)
-    switch (risk) {
-      case ScanRisk.safe:
-        return StatusBadge.safe(context);
-      case ScanRisk.warning:
-        return StatusBadge.warning(context);
-      case ScanRisk.danger:
-        return StatusBadge.danger(context);
-    }
-  }
   @override
   Widget build(BuildContext context) {
     // Widget gérant l'affichage du badge du statut

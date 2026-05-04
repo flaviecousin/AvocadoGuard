@@ -18,22 +18,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get voirDashboard => 'View dashboard';
 
   @override
-  String get dashboardIot => 'Dashboard IoT';
-
-  @override
-  String get voirScan => 'View the scans →';
-
-  @override
-  String get lastScan => 'Last Scan: ';
-
-  @override
-  String get detectionMaladie => 'Alternaria Detection';
-
-  @override
   String get home => 'Home';
-
-  @override
-  String get module1 => 'Module 1';
 
   @override
   String get module2 => 'Module 2';
@@ -159,7 +144,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get now => 'now';
 
   @override
-  String get ventilationChambreFroide => 'Check the ventilation of the cold room.';
+  String get ventilationChambreFroide =>
+      'Check the ventilation of the cold room.';
 
   @override
   String get display => 'display every';
@@ -208,6 +194,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get co2Max => 'Max CO₂';
+
+  @override
+  String get seuilsParDefaut => 'Default thresholds';
 
   @override
   String get historique => 'History';
@@ -321,13 +310,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settings => 'SETTINGS';
 
   @override
-  String get moduleTitleProfil => '🌿 Module 1 - Plant Diagnosis';
-
-  @override
   String get module2TitleProfil => '📦 Module 2 - IoT';
-
-  @override
-  String get fusionIaIoT => '🔗 Merge: IA + IoT';
 
   @override
   String get voirProfil => 'View my profile →';
@@ -337,9 +320,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get anglais => 'English';
-
-  @override
-  String get slogan => 'SECURE. MONITOR. PROTECT.';
 
   @override
   String get userScreenTitle => 'User';
@@ -369,9 +349,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get douteux => 'Suspect';
 
   @override
-  String get infecte => 'Infected';
-
-  @override
   String get danger => 'Risk';
 
   @override
@@ -394,34 +371,4 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get capteurOff => 'Offline Captor';
-
-  @override
-  String get fusionTitle => 'Merge IA + IoT';
-
-  @override
-  String get correlation => 'Correlated View';
-
-  @override
-  String get plantsDouteux => 'DUBIOUS PLANTS';
-
-  @override
-  String get plantsDanger => 'PLANTS IN DANGER';
-
-  @override
-  String get alertesIoT => 'ALERTS';
-
-  @override
-  String get totalScans => 'TOTAL SCANS';
-
-  @override
-  String get seuilsParDefaut => 'Default thresholds';
-
-  @override
-  String get alerteTemp2 => 'TEMPERATURE ALERTS';
-
-  @override
-  String get alerteHR => 'HUMIDITY ALERTS';
-
-  @override
-  String get alerteCO2 => 'CO₂ ALERTS';
 }

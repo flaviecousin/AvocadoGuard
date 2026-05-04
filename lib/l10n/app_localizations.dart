@@ -62,7 +62,8 @@ import 'app_localizations_fr.dart';
 /// be consistent with the languages listed in the AppLocalizations.supportedLocales
 /// property.
 abstract class AppLocalizations {
-  AppLocalizations(String locale) : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+  AppLocalizations(String locale)
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -70,7 +71,8 @@ abstract class AppLocalizations {
     return Localizations.of<AppLocalizations>(context, AppLocalizations);
   }
 
-  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+  static const LocalizationsDelegate<AppLocalizations> delegate =
+      _AppLocalizationsDelegate();
 
   /// A list of this localizations delegate along with the default localizations
   /// delegates.
@@ -82,7 +84,8 @@ abstract class AppLocalizations {
   /// Additional delegates can be added by appending to this list in
   /// MaterialApp. This list does not have to be used at all if a custom list
   /// of delegates is preferred or required.
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates = <LocalizationsDelegate<dynamic>>[
+  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
+      <LocalizationsDelegate<dynamic>>[
     delegate,
     GlobalMaterialLocalizations.delegate,
     GlobalCupertinoLocalizations.delegate,
@@ -97,840 +100,733 @@ abstract class AppLocalizations {
 
   /// No description provided for @bonjour.
   ///
-  /// In en, this message translates to:
-  /// **'Hello 👋'**
+  /// In fr, this message translates to:
+  /// **'Bonjour 👋'**
   String get bonjour;
 
   /// No description provided for @vueEnsemble.
   ///
-  /// In en, this message translates to:
-  /// **'Overview of your activities'**
+  /// In fr, this message translates to:
+  /// **'Vue d\'ensemble de vos activités'**
   String get vueEnsemble;
 
   /// No description provided for @voirDashboard.
   ///
-  /// In en, this message translates to:
-  /// **'View dashboard'**
+  /// In fr, this message translates to:
+  /// **'Voir le dashboard'**
   String get voirDashboard;
-
-  /// No description provided for @dashboardIot.
-  ///
-  /// In en, this message translates to:
-  /// **'Dashboard IoT'**
-  String get dashboardIot;
-
-  /// No description provided for @voirScan.
-  ///
-  /// In en, this message translates to:
-  /// **'View the scans →'**
-  String get voirScan;
-
-  /// No description provided for @lastScan.
-  ///
-  /// In en, this message translates to:
-  /// **'Last Scan: '**
-  String get lastScan;
-
-  /// No description provided for @detectionMaladie.
-  ///
-  /// In en, this message translates to:
-  /// **'Alternaria Detection'**
-  String get detectionMaladie;
 
   /// No description provided for @home.
   ///
-  /// In en, this message translates to:
-  /// **'Home'**
+  /// In fr, this message translates to:
+  /// **'Accueil'**
   String get home;
-
-  /// No description provided for @module1.
-  ///
-  /// In en, this message translates to:
-  /// **'Module 1'**
-  String get module1;
 
   /// No description provided for @module2.
   ///
-  /// In en, this message translates to:
+  /// In fr, this message translates to:
   /// **'Module 2'**
   String get module2;
 
   /// No description provided for @profil.
   ///
-  /// In en, this message translates to:
-  /// **'Profile'**
+  /// In fr, this message translates to:
+  /// **'Profil'**
   String get profil;
 
   /// No description provided for @sauvegarder.
   ///
-  /// In en, this message translates to:
-  /// **'Save'**
+  /// In fr, this message translates to:
+  /// **'Sauvegarder'**
   String get sauvegarder;
 
   /// No description provided for @valider.
   ///
-  /// In en, this message translates to:
-  /// **'Confirm'**
+  /// In fr, this message translates to:
+  /// **'Valider'**
   String get valider;
 
   /// No description provided for @annuler.
   ///
-  /// In en, this message translates to:
-  /// **'Cancel'**
+  /// In fr, this message translates to:
+  /// **'Annuler'**
   String get annuler;
 
   /// No description provided for @envoyer.
   ///
-  /// In en, this message translates to:
-  /// **'Send'**
+  /// In fr, this message translates to:
+  /// **'Envoyer'**
   String get envoyer;
 
   /// No description provided for @scanner.
   ///
-  /// In en, this message translates to:
-  /// **'Scan'**
+  /// In fr, this message translates to:
+  /// **'Scanner'**
   String get scanner;
 
   /// No description provided for @deconnexion.
   ///
-  /// In en, this message translates to:
-  /// **'Logout'**
+  /// In fr, this message translates to:
+  /// **'Déconnexion'**
   String get deconnexion;
 
   /// No description provided for @modifier.
   ///
-  /// In en, this message translates to:
-  /// **'Change'**
+  /// In fr, this message translates to:
+  /// **'Modifier'**
   String get modifier;
 
   /// No description provided for @reinitialiserMdp.
   ///
-  /// In en, this message translates to:
-  /// **'Reset password'**
+  /// In fr, this message translates to:
+  /// **'Réinitialiser le mot de passe'**
   String get reinitialiserMdp;
 
   /// No description provided for @connexion.
   ///
-  /// In en, this message translates to:
-  /// **'Login'**
+  /// In fr, this message translates to:
+  /// **'Connexion'**
   String get connexion;
 
   /// No description provided for @motDePasse.
   ///
-  /// In en, this message translates to:
-  /// **'Password:'**
+  /// In fr, this message translates to:
+  /// **'Mot de passe :'**
   String get motDePasse;
 
   /// No description provided for @motDePasse2.
   ///
-  /// In en, this message translates to:
-  /// **'Password'**
+  /// In fr, this message translates to:
+  /// **'Mot de passe'**
   String get motDePasse2;
 
   /// No description provided for @email.
   ///
-  /// In en, this message translates to:
-  /// **'Email:'**
+  /// In fr, this message translates to:
+  /// **'Email :'**
   String get email;
 
   /// No description provided for @email2.
   ///
-  /// In en, this message translates to:
+  /// In fr, this message translates to:
   /// **'Email'**
   String get email2;
 
   /// No description provided for @creerCompte.
   ///
-  /// In en, this message translates to:
-  /// **'Create an AgroSafe account'**
+  /// In fr, this message translates to:
+  /// **'Créer un compte AgroSafe'**
   String get creerCompte;
 
   /// No description provided for @motDePasseOublie.
   ///
-  /// In en, this message translates to:
-  /// **'Forgot password?'**
+  /// In fr, this message translates to:
+  /// **'Mot de passe oublié ?'**
   String get motDePasseOublie;
 
   /// No description provided for @emailReinitialisation.
   ///
-  /// In en, this message translates to:
-  /// **'Reset email sent!'**
+  /// In fr, this message translates to:
+  /// **'Email de réinitialisation envoyé !'**
   String get emailReinitialisation;
 
   /// No description provided for @mdpEntre.
   ///
-  /// In en, this message translates to:
-  /// **'Please enter your password'**
+  /// In fr, this message translates to:
+  /// **'Veuillez entrer votre mot de passe'**
   String get mdpEntre;
 
   /// No description provided for @emailEntre.
   ///
-  /// In en, this message translates to:
-  /// **'Please enter your email adress'**
+  /// In fr, this message translates to:
+  /// **'Veuillez entrer votre addresse mail'**
   String get emailEntre;
 
   /// No description provided for @confirmation.
   ///
-  /// In en, this message translates to:
-  /// **'Confirm:'**
+  /// In fr, this message translates to:
+  /// **'Confirmation :'**
   String get confirmation;
 
   /// No description provided for @confirmationMdp.
   ///
-  /// In en, this message translates to:
-  /// **'Please confirm your password'**
+  /// In fr, this message translates to:
+  /// **'Veuillez confirmer votre mot de passe'**
   String get confirmationMdp;
 
   /// No description provided for @profilPref.
   ///
-  /// In en, this message translates to:
-  /// **'Favorite profile:'**
+  /// In fr, this message translates to:
+  /// **'Profil préféré :'**
   String get profilPref;
 
   /// No description provided for @profilChoix.
   ///
-  /// In en, this message translates to:
-  /// **'Please, choose your favorite profile'**
+  /// In fr, this message translates to:
+  /// **'Veuillez choisir votre profil préféré'**
   String get profilChoix;
 
   /// No description provided for @agriculteur.
   ///
-  /// In en, this message translates to:
-  /// **'🌿 Farmer'**
+  /// In fr, this message translates to:
+  /// **'🌿 Agriculteur'**
   String get agriculteur;
 
   /// No description provided for @gestionnaire.
   ///
-  /// In en, this message translates to:
-  /// **'📦 Stock manager'**
+  /// In fr, this message translates to:
+  /// **'📦 Gestionnaire de stockage'**
   String get gestionnaire;
 
   /// No description provided for @needEmail.
   ///
-  /// In en, this message translates to:
-  /// **'Email needed'**
+  /// In fr, this message translates to:
+  /// **'Email requis'**
   String get needEmail;
 
   /// No description provided for @invalidEmail.
   ///
-  /// In en, this message translates to:
-  /// **'Format of the email invalid'**
+  /// In fr, this message translates to:
+  /// **'Format email invalide'**
   String get invalidEmail;
 
   /// No description provided for @needMdp.
   ///
-  /// In en, this message translates to:
-  /// **'Password needed'**
+  /// In fr, this message translates to:
+  /// **'Mot de passe requis'**
   String get needMdp;
 
   /// No description provided for @mdpTooShort.
   ///
-  /// In en, this message translates to:
-  /// **'Minimum 6 characters'**
+  /// In fr, this message translates to:
+  /// **'Minimum 6 caractères'**
   String get mdpTooShort;
 
   /// No description provided for @needConfirm.
   ///
-  /// In en, this message translates to:
-  /// **'Confirmation needed'**
+  /// In fr, this message translates to:
+  /// **'Confirmation requise'**
   String get needConfirm;
 
   /// No description provided for @mdpMismatch.
   ///
-  /// In en, this message translates to:
-  /// **'Passwords have to be identical'**
+  /// In fr, this message translates to:
+  /// **'Les mots de passe doivent être identiques'**
   String get mdpMismatch;
 
   /// No description provided for @stockageAvocat.
   ///
-  /// In en, this message translates to:
-  /// **'Avocado Storage'**
+  /// In fr, this message translates to:
+  /// **'Stockage Avocat'**
   String get stockageAvocat;
 
   /// No description provided for @alerteRisque.
   ///
-  /// In en, this message translates to:
-  /// **'Risk Alert!'**
-  String get alerteRisque;
-
+  /// In fr, this message translates to:
   /// No description provided for @accuse.
   ///
   /// In en, this message translates to:
   /// **'Acknowledge'**
+
+  /// In fr, this message translates to:
+  /// **'Accusé de réception'**
   String get accuse;
 
   /// No description provided for @alertesActives.
   ///
-  /// In en, this message translates to:
-  /// **'Active Alerts'**
+  /// In fr, this message translates to:
+  /// **'Alertes Actives'**
   String get alertesActives;
 
   /// No description provided for @seuilsFAO.
   ///
-  /// In en, this message translates to:
-  /// **'AVOCADO FAO THRESHOLDS'**
+  /// In fr, this message translates to:
+  /// **'SEUILS FAO AVOCAT'**
   String get seuilsFAO;
 
   /// No description provided for @lastMesure.
   ///
-  /// In en, this message translates to:
-  /// **'Last mesure: '**
+  /// In fr, this message translates to:
+  /// **'Dernière mesure : '**
   String get lastMesure;
 
   /// No description provided for @combien.
   ///
-  /// In en, this message translates to:
-  /// **''**
+  /// In fr, this message translates to:
+  /// **'il y a '**
   String get combien;
 
   /// No description provided for @combien2.
   ///
-  /// In en, this message translates to:
-  /// **'ago'**
+  /// In fr, this message translates to:
+  /// **''**
   String get combien2;
 
   /// No description provided for @now.
   ///
-  /// In en, this message translates to:
-  /// **'now'**
+  /// In fr, this message translates to:
+  /// **'à l\'instant'**
   String get now;
 
   /// No description provided for @ventilationChambreFroide.
   ///
-  /// In en, this message translates to:
-  /// **'Check the ventilation of the cold room.'**
+  /// In fr, this message translates to:
+  /// **'Vérifiez la ventilation de la chambre froide.'**
   String get ventilationChambreFroide;
 
   /// No description provided for @display.
   ///
-  /// In en, this message translates to:
-  /// **'display every'**
+  /// In fr, this message translates to:
+  /// **'affichage toutes les'**
   String get display;
 
   /// No description provided for @stable.
   ///
-  /// In en, this message translates to:
+  /// In fr, this message translates to:
   /// **'Stable'**
   String get stable;
 
   /// No description provided for @maturation.
   ///
-  /// In en, this message translates to:
+  /// In fr, this message translates to:
   /// **'Maturation'**
   String get maturation;
 
   /// No description provided for @alerteFermentation.
   ///
-  /// In en, this message translates to:
-  /// **'Fermentation alert'**
+  /// In fr, this message translates to:
+  /// **'Alerte fermentation'**
   String get alerteFermentation;
 
   /// No description provided for @configuration.
   ///
-  /// In en, this message translates to:
+  /// In fr, this message translates to:
   /// **'Configuration'**
   String get configuration;
 
   /// No description provided for @temperature.
   ///
-  /// In en, this message translates to:
-  /// **'TEMPERATURE'**
+  /// In fr, this message translates to:
+  /// **'TEMPÉRATURE'**
   String get temperature;
 
   /// No description provided for @humidite.
   ///
-  /// In en, this message translates to:
-  /// **'HUMIDITY'**
+  /// In fr, this message translates to:
+  /// **'HUMIDITÉ'**
   String get humidite;
 
   /// No description provided for @frequenceMesure.
   ///
-  /// In en, this message translates to:
-  /// **'MEASUREMENT FREQUENCY'**
+  /// In fr, this message translates to:
+  /// **'FRÉQUENCE DE MESURE'**
   String get frequenceMesure;
 
   /// No description provided for @seuilsAlerte.
   ///
-  /// In en, this message translates to:
-  /// **'Alert thresholds'**
+  /// In fr, this message translates to:
+  /// **'Seuils d\'alerte'**
   String get seuilsAlerte;
 
   /// No description provided for @capteurID.
   ///
-  /// In en, this message translates to:
-  /// **'CAPTOR IDENTIFICATION'**
+  /// In fr, this message translates to:
+  /// **'IDENTIFIANT CAPTEUR'**
   String get capteurID;
 
   /// No description provided for @lotID.
   ///
-  /// In en, this message translates to:
-  /// **'NAME OF THE BATCH'**
+  /// In fr, this message translates to:
+  /// **'NOM DU LOT'**
   String get lotID;
 
   /// No description provided for @cultureID.
   ///
-  /// In en, this message translates to:
-  /// **'CULTURE MONITORED'**
+  /// In fr, this message translates to:
+  /// **'CULTURE SURVEILLÉE'**
   String get cultureID;
 
   /// No description provided for @faoVal.
   ///
-  /// In en, this message translates to:
-  /// **'FAO values recommended'**
+  /// In fr, this message translates to:
+  /// **'Valeurs FAO recommandées'**
   String get faoVal;
 
   /// No description provided for @temperatureMax.
   ///
-  /// In en, this message translates to:
-  /// **'Max temperature'**
+  /// In fr, this message translates to:
+  /// **'Température max'**
   String get temperatureMax;
 
   /// No description provided for @humidityMax.
   ///
-  /// In en, this message translates to:
-  /// **'Max humidity'**
+  /// In fr, this message translates to:
+  /// **'Humidité max'**
   String get humidityMax;
 
   /// No description provided for @co2Max.
   ///
-  /// In en, this message translates to:
-  /// **'Max CO₂'**
+  /// In fr, this message translates to:
+  /// **'CO₂ max'**
   String get co2Max;
+
+  /// No description provided for @seuilsParDefaut.
+  ///
+  /// In fr, this message translates to:
+  /// **'Seuils par défaut'**
+  String get seuilsParDefaut;
 
   /// No description provided for @historique.
   ///
-  /// In en, this message translates to:
-  /// **'History'**
+  /// In fr, this message translates to:
+  /// **'Historique'**
   String get historique;
 
   /// No description provided for @uneHeure.
   ///
-  /// In en, this message translates to:
+  /// In fr, this message translates to:
   /// **'1h'**
   String get uneHeure;
 
   /// No description provided for @septJours.
   ///
-  /// In en, this message translates to:
-  /// **'7 days'**
+  /// In fr, this message translates to:
+  /// **'7 jours'**
   String get septJours;
 
   /// No description provided for @trenteJours.
   ///
-  /// In en, this message translates to:
-  /// **'30 days'**
+  /// In fr, this message translates to:
+  /// **'30 jours'**
   String get trenteJours;
 
   /// No description provided for @temp.
   ///
-  /// In en, this message translates to:
-  /// **'Temperature'**
+  /// In fr, this message translates to:
+  /// **'Température'**
   String get temp;
 
   /// No description provided for @hr.
   ///
-  /// In en, this message translates to:
-  /// **'Humidity'**
+  /// In fr, this message translates to:
+  /// **'Humidité'**
   String get hr;
 
   /// No description provided for @co2.
   ///
-  /// In en, this message translates to:
+  /// In fr, this message translates to:
   /// **'CO₂'**
   String get co2;
 
   /// No description provided for @seuil.
   ///
-  /// In en, this message translates to:
-  /// **'Thresholds'**
+  /// In fr, this message translates to:
+  /// **'Seuils'**
   String get seuil;
 
   /// No description provided for @journalAlerte.
   ///
-  /// In en, this message translates to:
-  /// **'ALERTS DIARY'**
+  /// In fr, this message translates to:
+  /// **'JOURNAL DES ALERTES'**
   String get journalAlerte;
 
   /// No description provided for @min41.
   ///
-  /// In en, this message translates to:
-  /// **'41 min ago'**
+  /// In fr, this message translates to:
+  /// **'il y a 41 min'**
   String get min41;
 
   /// No description provided for @h3.
   ///
-  /// In en, this message translates to:
-  /// **'3 hours ago'**
-  String get h3;
-
+  /// In fr, this message translates to:
   /// No description provided for @j1.
   ///
   /// In en, this message translates to:
   /// **'1 day ago'**
+
+  /// In fr, this message translates to:
+  /// **'il y a 1 jour'**
   String get j1;
 
   /// No description provided for @hrMsg.
   ///
-  /// In en, this message translates to:
-  /// **'High relative humidity - HR 91%'**
+  /// In fr, this message translates to:
+  /// **'Humidité relative élevée — HR 91%'**
   String get hrMsg;
 
   /// No description provided for @tempMsg.
   ///
-  /// In en, this message translates to:
-  /// **'Temperature near threashold - T° 6.9°C'**
+  /// In fr, this message translates to:
+  /// **'Température proche du seuil — T° 6.9°C'**
   String get tempMsg;
 
   /// No description provided for @hrMsg2.
   ///
-  /// In en, this message translates to:
-  /// **'High relative humidity - HR 90.5%'**
+  /// In fr, this message translates to:
+  /// **'Humidité relative élevée — HR 90.5%'**
   String get hrMsg2;
 
   /// No description provided for @pasDeDonnees.
   ///
-  /// In en, this message translates to:
-  /// **'No data for this period'**
+  /// In fr, this message translates to:
+  /// **'Aucune donnée sur cette période'**
   String get pasDeDonnees;
 
   /// No description provided for @rapportLot.
   ///
-  /// In en, this message translates to:
-  /// **'Batch Report'**
+  /// In fr, this message translates to:
+  /// **'Rapport Lot'**
   String get rapportLot;
 
   /// No description provided for @rapportTitre.
   ///
-  /// In en, this message translates to:
-  /// **'Report Batch 03'**
+  /// In fr, this message translates to:
+  /// **'Rapport Lot 03'**
   String get rapportTitre;
 
   /// No description provided for @scoreRisqueGlobal.
   ///
-  /// In en, this message translates to:
-  /// **'GLOBAL RISK SCORE'**
+  /// In fr, this message translates to:
+  /// **'SCORE DE RISQUE GLOBAL'**
   String get scoreRisqueGlobal;
 
   /// No description provided for @faible.
   ///
-  /// In en, this message translates to:
-  /// **'Low'**
+  /// In fr, this message translates to:
+  /// **'Faible'**
   String get faible;
 
   /// No description provided for @modere.
   ///
-  /// In en, this message translates to:
-  /// **'Moderate'**
+  /// In fr, this message translates to:
+  /// **'Modéré'**
   String get modere;
 
   /// No description provided for @eleve.
   ///
-  /// In en, this message translates to:
-  /// **'High'**
+  /// In fr, this message translates to:
+  /// **'Elevé'**
   String get eleve;
 
   /// No description provided for @duree.
   ///
-  /// In en, this message translates to:
-  /// **'STOCK LIFE SPAN'**
+  /// In fr, this message translates to:
+  /// **'DURÉE STOCKAGE'**
   String get duree;
 
   /// No description provided for @jour.
   ///
-  /// In en, this message translates to:
-  /// **'day'**
-  String get jour;
-
+  /// In fr, this message translates to:
   /// No description provided for @jours.
   ///
   /// In en, this message translates to:
   /// **'days'**
+
+  /// In fr, this message translates to:
+  /// **'jours'**
   String get jours;
 
   /// No description provided for @alertes.
   ///
-  /// In en, this message translates to:
-  /// **'TRIGGERED\nALERTS'**
+  /// In fr, this message translates to:
+  /// **'ALERTES\nDÉCLENCHÉES'**
   String get alertes;
 
   /// No description provided for @moyTemp.
   ///
-  /// In en, this message translates to:
-  /// **'AVERAGE T°'**
+  /// In fr, this message translates to:
+  /// **'T° MOYENNE'**
   String get moyTemp;
 
   /// No description provided for @maxHR.
   ///
-  /// In en, this message translates to:
-  /// **'MAX HR REACHED'**
+  /// In fr, this message translates to:
+  /// **'HR MAX ATTEINTE'**
   String get maxHR;
 
   /// No description provided for @co2Moy.
   ///
-  /// In en, this message translates to:
-  /// **'AVERAGE CO₂'**
+  /// In fr, this message translates to:
+  /// **'CO₂ MOYEN'**
   String get co2Moy;
 
   /// No description provided for @totMesure.
   ///
-  /// In en, this message translates to:
-  /// **'TOTAL MEASURES'**
+  /// In fr, this message translates to:
+  /// **'MESURES TOTALES'**
   String get totMesure;
 
   /// No description provided for @visuel.
   ///
-  /// In en, this message translates to:
-  /// **'FOLLOW-UP VISUAL'**
+  /// In fr, this message translates to:
+  /// **'SUIVI VISUEL'**
   String get visuel;
 
   /// No description provided for @exportCSV.
   ///
-  /// In en, this message translates to:
-  /// **'CSV EXPORT'**
+  /// In fr, this message translates to:
+  /// **'Exporter CSV'**
   String get exportCSV;
 
   /// No description provided for @langue.
   ///
-  /// In en, this message translates to:
-  /// **'Language'**
+  /// In fr, this message translates to:
+  /// **'Langue'**
   String get langue;
 
   /// No description provided for @notifications.
   ///
-  /// In en, this message translates to:
+  /// In fr, this message translates to:
   /// **'Notifications'**
   String get notifications;
 
   /// No description provided for @darkMode.
   ///
-  /// In en, this message translates to:
+  /// In fr, this message translates to:
   /// **'Dark Mode'**
   String get darkMode;
 
   /// No description provided for @quickAccess.
   ///
-  /// In en, this message translates to:
+  /// In fr, this message translates to:
   /// **'QUICK ACCESS'**
   String get quickAccess;
 
   /// No description provided for @settings.
   ///
-  /// In en, this message translates to:
+  /// In fr, this message translates to:
   /// **'SETTINGS'**
   String get settings;
 
-  /// No description provided for @moduleTitleProfil.
-  ///
-  /// In en, this message translates to:
-  /// **'🌿 Module 1 - Plant Diagnosis'**
-  String get moduleTitleProfil;
-
   /// No description provided for @module2TitleProfil.
   ///
-  /// In en, this message translates to:
+  /// In fr, this message translates to:
   /// **'📦 Module 2 - IoT'**
   String get module2TitleProfil;
 
-  /// No description provided for @fusionIaIoT.
-  ///
-  /// In en, this message translates to:
-  /// **'🔗 Merge: IA + IoT'**
-  String get fusionIaIoT;
-
   /// No description provided for @voirProfil.
   ///
-  /// In en, this message translates to:
-  /// **'View my profile →'**
+  /// In fr, this message translates to:
+  /// **'Voir mon profil →'**
   String get voirProfil;
 
   /// No description provided for @french.
   ///
-  /// In en, this message translates to:
-  /// **'French'**
+  /// In fr, this message translates to:
+  /// **'Français'**
   String get french;
 
   /// No description provided for @anglais.
   ///
-  /// In en, this message translates to:
-  /// **'English'**
+  /// In fr, this message translates to:
+  /// **'Anglais'**
   String get anglais;
-
-  /// No description provided for @slogan.
-  ///
-  /// In en, this message translates to:
-  /// **'SECURE. MONITOR. PROTECT.'**
-  String get slogan;
 
   /// No description provided for @userScreenTitle.
   ///
-  /// In en, this message translates to:
-  /// **'User'**
+  /// In fr, this message translates to:
+  /// **'Utilisateur'**
   String get userScreenTitle;
 
   /// No description provided for @nonDefini.
   ///
-  /// In en, this message translates to:
-  /// **'Not defined'**
+  /// In fr, this message translates to:
+  /// **'Non défini'**
   String get nonDefini;
 
   /// No description provided for @agri.
   ///
-  /// In en, this message translates to:
-  /// **'Farmer'**
+  /// In fr, this message translates to:
+  /// **'Agriculteur'**
   String get agri;
 
   /// No description provided for @gestionn.
   ///
-  /// In en, this message translates to:
-  /// **'Stock manager'**
+  /// In fr, this message translates to:
+  /// **'Gestionnaire de stockage'**
   String get gestionn;
 
   /// No description provided for @pbProfil.
   ///
-  /// In en, this message translates to:
-  /// **'Profile not defined'**
+  /// In fr, this message translates to:
+  /// **'Profil non défini'**
   String get pbProfil;
 
   /// No description provided for @emailVerification.
   ///
-  /// In en, this message translates to:
-  /// **'Verification email sent'**
+  /// In fr, this message translates to:
+  /// **'Email de vérification envoyé'**
   String get emailVerification;
 
   /// No description provided for @profilSauvegarde.
   ///
-  /// In en, this message translates to:
-  /// **'Profile saved!'**
+  /// In fr, this message translates to:
+  /// **'Profil sauvegardé!'**
   String get profilSauvegarde;
 
   /// No description provided for @sain.
   ///
-  /// In en, this message translates to:
-  /// **'Safe'**
+  /// In fr, this message translates to:
+  /// **'Sain'**
   String get sain;
 
   /// No description provided for @douteux.
   ///
-  /// In en, this message translates to:
-  /// **'Suspect'**
+  /// In fr, this message translates to:
+  /// **'Douteux'**
   String get douteux;
-
-  /// No description provided for @infecte.
-  ///
-  /// In en, this message translates to:
-  /// **'Infected'**
-  String get infecte;
 
   /// No description provided for @danger.
   ///
-  /// In en, this message translates to:
-  /// **'Risk'**
+  /// In fr, this message translates to:
+  /// **'Danger'**
   String get danger;
 
   /// No description provided for @live.
   ///
-  /// In en, this message translates to:
-  /// **'Live'**
+  /// In fr, this message translates to:
+  /// **'En direct'**
   String get live;
 
   /// No description provided for @delayed.
   ///
-  /// In en, this message translates to:
-  /// **'Lated signal'**
+  /// In fr, this message translates to:
+  /// **'Retard signal'**
   String get delayed;
 
   /// No description provided for @offline.
   ///
-  /// In en, this message translates to:
-  /// **'Offline'**
+  /// In fr, this message translates to:
+  /// **'Hors ligne'**
   String get offline;
 
   /// No description provided for @alerteTemp.
   ///
-  /// In en, this message translates to:
-  /// **'Temperature high'**
+  /// In fr, this message translates to:
+  /// **'Température élevée'**
   String get alerteTemp;
 
   /// No description provided for @alerteHumid.
   ///
-  /// In en, this message translates to:
-  /// **'Humidity high'**
+  /// In fr, this message translates to:
+  /// **'Humidité élevée'**
   String get alerteHumid;
 
   /// No description provided for @alerteco2.
   ///
-  /// In en, this message translates to:
-  /// **'CO₂ high'**
+  /// In fr, this message translates to:
+  /// **'CO₂ élevé'**
   String get alerteco2;
 
   /// No description provided for @capteurOff.
   ///
-  /// In en, this message translates to:
-  /// **'Offline Captor'**
+  /// In fr, this message translates to:
+  /// **'Capteur hors ligne'**
   String get capteurOff;
-
-  /// No description provided for @fusionTitle.
-  ///
-  /// In en, this message translates to:
-  /// **'Merge IA + IoT'**
-  String get fusionTitle;
-
-  /// No description provided for @correlation.
-  ///
-  /// In en, this message translates to:
-  /// **'Correlated View'**
-  String get correlation;
-
-  /// No description provided for @plantsDouteux.
-  ///
-  /// In en, this message translates to:
-  /// **'DUBIOUS PLANTS'**
-  String get plantsDouteux;
-
-  /// No description provided for @plantsDanger.
-  ///
-  /// In en, this message translates to:
-  /// **'PLANTS IN DANGER'**
-  String get plantsDanger;
-
-  /// No description provided for @alertesIoT.
-  ///
-  /// In en, this message translates to:
-  /// **'ALERTS'**
-  String get alertesIoT;
-
-  /// No description provided for @totalScans.
-  ///
-  /// In en, this message translates to:
-  /// **'TOTAL SCANS'**
-  String get totalScans;
-
-  /// No description provided for @seuilsParDefaut.
-  ///
-  /// In en, this message translates to:
-  /// **'Default thresholds'**
-  String get seuilsParDefaut;
-
-  /// No description provided for @alerteTemp2.
-  ///
-  /// In en, this message translates to:
-  /// **'TEMPERATURE ALERTS'**
-  String get alerteTemp2;
-
-  /// No description provided for @alerteHR.
-  ///
-  /// In en, this message translates to:
-  /// **'HUMIDITY ALERTS'**
-  String get alerteHR;
-
-  /// No description provided for @alerteCO2.
-  ///
-  /// In en, this message translates to:
-  /// **'CO₂ ALERTS'**
-  String get alerteCO2;
 }
 
-class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+class _AppLocalizationsDelegate
+    extends LocalizationsDelegate<AppLocalizations> {
   const _AppLocalizationsDelegate();
 
   @override
@@ -939,25 +835,25 @@ class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> 
   }
 
   @override
-  bool isSupported(Locale locale) => <String>['en', 'fr'].contains(locale.languageCode);
+  bool isSupported(Locale locale) =>
+      <String>['en', 'fr'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
-
-
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
-    case 'en': return AppLocalizationsEn();
-    case 'fr': return AppLocalizationsFr();
+    case 'en':
+      return AppLocalizationsEn();
+    case 'fr':
+      return AppLocalizationsFr();
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.'
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }

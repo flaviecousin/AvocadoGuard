@@ -37,32 +37,12 @@ class ModuleTag extends StatelessWidget {
   }
 
   Map<String, dynamic> _getConfig(BuildContext context) {
-    // Fonction permettant de configurer les couleurs et textes des étiquettes
-    switch (type) {
-      // Configuration de l'étiquette du module 1 (Pommes de terre)
-      case ModuleTagType.module1:
-        return {
-          'label': AppLocalizations.of(context)!.moduleTitleProfil, // Titre du module
-          'background': const Color(0xFFEDF5E4), // Couleur de fond
-          'text': AgrosafeTheme.moss, // Couleur du texte
-          'border': AgrosafeTheme.lime, // Couleur des bordures
-        };
-      // Configuration de l'étiquette du module 2 (Avocat)
-      case ModuleTagType.module2:
-        return {
-          'label': AppLocalizations.of(context)!.module2TitleProfil, // Titre du module
-          'background': const Color(0xFFEAF4FB), // Couleur de fond
-          'text': const Color(0xFF1A6B99), // Couleur du texte
-          'border': const Color(0xFF85C1E9), // Couleur des bordures
-        };
-      // Configuration de l'étiquette du module commun (résumé des modules 1 et 2)
-      case ModuleTagType.shared:
-        return {
-          'label': AppLocalizations.of(context)!.fusionIaIoT, // Titre du module
-          'background': const Color(0xFFFEF9F0), // Couleur de fond
-          'text': AgrosafeTheme.warning, // Couleur du texte
-          'border': const Color(0xFFF0B27A), // Couleur des bordures
-        };
-    }
+    // Fonction permettant de configurer les couleurs et textes de l'étiquette
+    return {
+      'label': AppLocalizations.of(context)!.module2TitleProfil, // Titre du module
+      'background': const Color(0xFFEAF4FB), // Couleur de fond
+      'text': const Color(0xFF1A6B99), // Couleur du texte
+      'border': const Color(0xFF85C1E9), // Couleur des bordures
+    };
   }
 }

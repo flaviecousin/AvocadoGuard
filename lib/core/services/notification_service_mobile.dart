@@ -12,7 +12,7 @@ class NotificationService {
       iOS: DarwinInitializationSettings(), // Sur iOS : on utilise les paramètres par défaut d'Apple
 
     );
-    await _localNotifications.initialize(settings); // Initialise le plugin de notifications locales avec les paramètres définis précédemment
+    await _localNotifications.initialize(settings: settings); // Initialise le plugin de notifications locales avec les paramètres définis précédemment
     final androidPlugin = _localNotifications
       .resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>();
     await androidPlugin?.requestNotificationsPermission();
@@ -79,10 +79,10 @@ class NotificationService {
 
     await _localNotifications.show(
       // Affichage des notifications
-      0,
-      title,
-      body,
-      const NotificationDetails(android: androidDetails),
+      id: 0,
+      title: title,
+      body: body,
+      notificationDetails: const NotificationDetails(android: androidDetails),
     );
   }
 }
