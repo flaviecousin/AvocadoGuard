@@ -88,6 +88,7 @@
   "uneHeure": "1h",
   "septJours": "7 jours",
   "trenteJours": "30 jours",
+  "jour": "jour",
   "temp": "Température",
   "hr": "Humidité",
   "co2": "CO₂",

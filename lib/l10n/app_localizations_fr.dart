@@ -211,6 +211,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get trenteJours => '30 jours';
 
   @override
+  String get jour => 'jour';
+
+  @override
   String get temp => 'Température';
 
   @override
@@ -266,9 +269,6 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get duree => 'DURÉE STOCKAGE';
-
-  @override
-  String get jour => 'jour';
 
   @override
   String get jours => 'jours';

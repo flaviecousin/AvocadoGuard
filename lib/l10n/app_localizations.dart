@@ -323,11 +323,11 @@ abstract class AppLocalizations {
   /// No description provided for @alerteRisque.
   ///
   /// In fr, this message translates to:
+  /// **'Alerte Risque !'**
+  String get alerteRisque;
+
   /// No description provided for @accuse.
   ///
-  /// In en, this message translates to:
-  /// **'Acknowledge'**
-
   /// In fr, this message translates to:
   /// **'Accusé de réception'**
   String get accuse;
@@ -500,6 +500,12 @@ abstract class AppLocalizations {
   /// **'30 jours'**
   String get trenteJours;
 
+  /// No description provided for @jour.
+  ///
+  /// In fr, this message translates to:
+  /// **'jour'**
+  String get jour;
+
   /// No description provided for @temp.
   ///
   /// In fr, this message translates to:
@@ -539,11 +545,11 @@ abstract class AppLocalizations {
   /// No description provided for @h3.
   ///
   /// In fr, this message translates to:
+  /// **'il y a 3 heures'**
+  String get h3;
+
   /// No description provided for @j1.
   ///
-  /// In en, this message translates to:
-  /// **'1 day ago'**
-
   /// In fr, this message translates to:
   /// **'il y a 1 jour'**
   String get j1;
@@ -614,14 +620,8 @@ abstract class AppLocalizations {
   /// **'DURÉE STOCKAGE'**
   String get duree;
 
-  /// No description provided for @jour.
-  ///
-  /// In fr, this message translates to:
   /// No description provided for @jours.
   ///
-  /// In en, this message translates to:
-  /// **'days'**
-
   /// In fr, this message translates to:
   /// **'jours'**
   String get jours;
