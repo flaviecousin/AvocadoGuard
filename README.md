@@ -13,7 +13,15 @@ Flutter Application for real-time monitoring of avocado storage conditions (temp
 ![Makefile](https://img.shields.io/badge/Makefile-427819?style=for-the-badge&logo=gnu&logoColor=white)
 
 ## 📖 Preview
-Main features of the project:
+<img height="500" alt="splash" src="https://github.com/user-attachments/assets/7c5a04d1-31f3-4e7a-8a70-f2f68ffdadc2" />
+<img height="500" alt="home" src="https://github.com/user-attachments/assets/031eb1b0-5845-472d-9633-ac707b02edf5" />
+<img height="500" alt="module2" src="https://github.com/user-attachments/assets/bd82d4d2-eada-4bd3-94cf-d6ecfd3dfd59" /> 
+<img height="500" alt="historic" src="https://github.com/user-attachments/assets/9fcc7da2-17ed-4fbc-9fad-2dcd1d2e611d" />
+<img height="500" alt="alertes" src="https://github.com/user-attachments/assets/53b8c4cd-d9e9-4d19-8229-f95ef184e345" />
+<img height="500" alt="report" src="https://github.com/user-attachments/assets/97b54cdb-5987-4cb0-834b-7f81cdc2fa47" />
+<img height="500" alt="report2" src="https://github.com/user-attachments/assets/95ad0b00-30d0-45cb-9c9a-eebdc9673e08" />
+
+**Main features of the project:**
 - Detection of degradation's signs
 - Monitoring of storage parameters
 - Visualization of storage status
@@ -21,8 +29,26 @@ Main features of the project:
 - History of the measures and alerts
 - Communication between the sensors, the cloud and the application
 
-## 🗃️ Architecture
+## 🗃️ Project structure
 <img width="1296" height="1205" alt="AvocadoGuard - WBS(13)" src="https://github.com/user-attachments/assets/e6669553-9bcd-45c3-9ca5-0a6d29f8691f" />
+The code for the embedded system was put in the folder called 'arduino'.
+The code for the app was mainly put in the folder called 'lib'. It was structured around this:
+lib/
+|---core/
+    |---constants/               # Shared data structures used across widgets
+    |---data/                    # Simulated data used before connecting the sensors to the app
+    |---models/                  # Data models (LotConfig, ConnectionStatus...)
+    |---services/                # Firebase, notifications, configuration logic
+    |---theme/                   # Theme of the app
+|---l10n/                        # Translations (french and english)
+|---screens/                     # One folder per screen
+    |---avocado_module/          # Code for the main screens (realtime data and configuration)
+    |---history/                 # Code for the history screen
+    |---home/                    # Code for the home screen
+    |---profile/                 # Code for the profile screens
+    |---reports/                 # Code for the reports screens
+    |---splash/                  # Code for the loading screen and the account screens (logging and creation)
+|---widgets/                     # Reusable UI components
 
 ## 💽 Prerequisites and installation
 ### Flutter SDK
@@ -79,6 +105,21 @@ You also need to enable de **Developer Mode** and **USB Debugging** on your phon
    flutter devices
    ```
    to make sure your phone is recongnized by Flutter and there is no problem.
-## 🛠️ Configuration
+## 🛠️ Structure of Firebase and Firestore
+Expected structure in the Firebase Realtime Database:
+capteurs/
+   |---module1/
+          |---historique/
+          |---live/
+                |---bai: your_value
+                |---co2: your_value # the real value after normalization
+                |---co2_raw: your_value
+                |---humidite: your_value
+                |---pression: your_value
+                |---status: "your_text"
+                |---temperature: your_value
+                |---timestamp: your_value # time spent since the ESP32 sent the first data
+                |---ts: your_value # number of seconds spent since 01/01/1970 00:00
+                |---ts_ok: your_value
+
 ## 🧩 Features
-## 🗂️ Project structure
