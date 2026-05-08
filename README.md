@@ -33,6 +33,8 @@ Flutter Application for real-time monitoring of avocado storage conditions (temp
 <img width="1296" height="1205" alt="AvocadoGuard - WBS(13)" src="https://github.com/user-attachments/assets/e6669553-9bcd-45c3-9ca5-0a6d29f8691f" />
 The code for the embedded system was put in the folder called 'arduino'.
 The code for the app was mainly put in the folder called 'lib'. It was structured around this:
+
+```
 lib/
 |---core/
     |---constants/               # Shared data structures used across widgets
@@ -49,6 +51,7 @@ lib/
     |---reports/                 # Code for the reports screens
     |---splash/                  # Code for the loading screen and the account screens (logging and creation)
 |---widgets/                     # Reusable UI components
+```
 
 ## 💽 Prerequisites and installation
 ### Flutter SDK
@@ -107,6 +110,7 @@ You also need to enable de **Developer Mode** and **USB Debugging** on your phon
    to make sure your phone is recongnized by Flutter and there is no problem.
 ## 🛠️ Structure of Firebase and Firestore
 Expected structure in the Firebase Realtime Database:
+```
 capteurs/
    |---module1/
           |---historique/
@@ -121,5 +125,6 @@ capteurs/
                 |---timestamp: your_value # time spent since the ESP32 sent the first data
                 |---ts: your_value # number of seconds spent since 01/01/1970 00:00
                 |---ts_ok: your_value
+```
 
 ## 🧩 Features
