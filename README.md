@@ -1,6 +1,6 @@
 # 🥑AvocadoGuard
 
-*Master 1, ISEN, January to April 2026, Project's Partner: Charles Essimbi Emini, Teacher: Djida Ayad*
+*Master 1, ISEN, January to April 2026, Teacher: Djida Ayad*
 
 Flutter Application for real-time monitoring of avocado storage conditions (temperature, humidity, CO2, BAI) via an ESP32 sensor connected to Firebase Realtime Database with alerts, history and batch reporting.
 
@@ -74,7 +74,11 @@ You also need to enable de **Developer Mode** and **USB Debugging** on your phon
 2. Tap Build number 7 times until you see "You are now a developer"
 3. Go back to Settings > Developer options
 4. Enable USB Debugging
-5. Connect your device via USB and run 'flutter run'. You can use the instruction ```flutter devices``` to make sure your phone is recongnized by Flutter and there is no problem.
+5. Connect your device via USB and run 'flutter run'. You can use the instruction
+   ```Bash
+   flutter devices
+   ```
+   to make sure your phone is recongnized by Flutter and there is no problem.
 ## Configuration
 ## Features
 ## Project structure
