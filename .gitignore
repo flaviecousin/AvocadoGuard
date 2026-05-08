@@ -46,3 +46,6 @@ app.*.map.json
 
 # Sensible files
 .env
+firebase_options.dart
+google-services.json
+GoogleService-Info.plist
