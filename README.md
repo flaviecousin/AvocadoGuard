@@ -12,7 +12,7 @@ Flutter Application for real-time monitoring of avocado storage conditions (temp
 ![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
 ![Makefile](https://img.shields.io/badge/Makefile-427819?style=for-the-badge&logo=gnu&logoColor=white)
 
-## Preview
+## 📖 Preview
 Main features of the project:
 - Detection of degradation's signs
 - Monitoring of storage parameters
@@ -21,10 +21,10 @@ Main features of the project:
 - History of the measures and alerts
 - Communication between the sensors, the cloud and the application
 
-## Architecture
+## 🗃️ Architecture
 <img width="1296" height="1205" alt="AvocadoGuard - WBS(13)" src="https://github.com/user-attachments/assets/e6669553-9bcd-45c3-9ca5-0a6d29f8691f" />
 
-## Prerequisites and installation
+## 💽 Prerequisites and installation
 ### Flutter SDK
 Flutter SDK version: '>=3.0.0 <4.0.0'
 
@@ -79,6 +79,6 @@ You also need to enable de **Developer Mode** and **USB Debugging** on your phon
    flutter devices
    ```
    to make sure your phone is recongnized by Flutter and there is no problem.
-## Configuration
-## Features
-## Project structure
+## 🛠️ Configuration
+## 🧩 Features
+## 🗂️ Project structure
