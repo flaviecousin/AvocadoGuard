@@ -108,6 +108,32 @@ You also need to enable de **Developer Mode** and **USB Debugging** on your phon
    flutter devices
    ```
    to make sure your phone is recongnized by Flutter and there is no problem.
+### Arduino Libraries
+Install the following libraries via Arduino IDE -> Tools -> Manage Libraries
+- Firebase ESP Client
+- Adafruit BME280 Library
+- Adafruit Unified Sensor
+The following libraries are built-in with the ESP32 board package and require no separate installation:
+- WiFi
+- BLEDevice / BLEServer / VLEUtils / BLE2902
+- Wire
+- esp_bt
+### ESP32 Board Package 
+If not already installed, go to Tools -> Board -> Boards Manager and install esp32
+### Speed
+Change the 
+### To run the code
+1. Fill in your credentials in the SECRETS section at the top of the file:
+   ```cpp
+   #define WIFI_SSID       "your_wifi_network_name"
+   #define WIFI_PASSWORD   "your_wifi_password"
+   #define DATABASE_URL    "your_firebase_realtime_database_url"
+   #define DATABASE_SECRET "your_firebase_database_secret"
+   ```
+3. Select your board: Tools -> Board -> ESP32 Arduino -> ESP32 Dev Module
+4. Select the correct port: Tools -> Port after connecting the ESP32 to your computer
+5. Click Upload
+6. Open Tools -> Serial Monitor and set the speed to 115000 bauds or 115600 bauds (or values around these) to see the boot logs and sensor readings
 ## 🛠️ Structure of Firebase and Firestore
 Expected structure in the Firebase Realtime Database:
 ```
