@@ -126,5 +126,109 @@ capteurs/
                 |---ts: your_value # number of seconds spent since 01/01/1970 00:00
                 |---ts_ok: your_value
 ```
+Expected structure in Firestore Database:
+```
+users/{userId}
+   |---{userId}
+          |---alertes/
+                |---{alerteId}
+                        |---date: your_value
+                        |---message: "your_text"
+                        |---nom: "your_text"
+                        |---userId: "your_secured_name"
+          |---mesures/
+                |---{mesureId}
+                        |---bai: your_value
+                        |---co2: your_value
+                        |---date: your_value
+                        |---humidity: your_value
+                        |---temperature: your_value
+          |---capteursId: your_text
+          |---co2Max: your_value
+          |---culture: your_text
+          |---darkMode: your_value # change the theme of the app
+          |---frequency: your_value
+          |---humidityMax: your_value
+          |---lastModified: your_value # last time the configuration screen was modified
+          |---locale: "your_text" # language chosen by the user
+          |---lotName: "your_text"
+          |---role: "your_text"
+          |---temperatureMax: your_value
 
+
+                |---co2: your_value # the real value after normalization
+                |---co2_raw: your_value
+                |---humidite: your_value
+                |---pression: your_value
+                |---status: "your_text"
+                |---temperature: your_value
+                |---timestamp: your_value # time spent since the ESP32 sent the first data
+                |---ts: your_value # number of seconds spent since 01/01/1970 00:00
+                |---ts_ok: your_value
+```
 ## 🧩 Features
+### 📡 ESP32 Firmware
+- **Real-time sensing:** 
+  Temperature, humidity and pressure via BME280 sensor and concentration of CO2 via MQ-135 sensor
+  
+- **BAI (Biological Activity Index):** 
+  Custom ripeness indicator calculated from MQ-135 baseline drift to detect avocado fermentation stages (Stable -> Maturation -> Fermentation alert)
+  
+- **Firebase Realtime Database:** 
+  Live data pushed every 10 seconds to '/capteurs/module1/live' and timestamped history saved to 'capteurs/module1/historique'
+  
+- **Offline ring buffer:** 
+  Up to 10 measurements stored locally wheb WiFi is unavailable, automatically synced to Firebase on reconnection
+  
+- **BLE notifications:** 
+  JSON payload broadcast via Bluetooth Low Energy for direct mobile connection without WiFi (this wasn't implemented into the app)
+  
+- **Auto-reconnection:** 
+   Automatic WiFi and Firebase reconnection on connection loss
+
+### 📱 Application
+#### Authentification
+- **Login and registration:** 
+  Email and password authentification via Firebase Auth with form validation, password visibility toggle and error feedback
+- **Password reset:**
+  Reset link sent by email directly from the login screen
+- **Role selection:**
+  User choose their profile (farmer or storage manager) at registration, editable from the profile screen
+
+#### Home
+- **Overview dashboard:**
+  Summary card showing the monitor lot, sensor ID and live connection status at a glance
+- **Quick navigation:**
+  Direct access to history, lot report and the real-time module from the home screen
+#### Real-time Module
+- **Live sensor dashboard:** 
+  Live display of temperature, humidity, CO2 and BAI mesurements received from the ESP32 via Firebase Realtime Database and updated according to a user-configured frequency
+- **Configurable alert thresholds:**
+  Custom max values per sensor (temperature, humidity, CO2); active alerts shown as an in-app banner with details on tap
+- **Connection status indicator:**
+  Live/Delayed/Offline badge reflecting the time elapsed since the last sensor measurement
+- **Lot configuration:**
+  Sensor ID, lot name, culture type, display frequency and alert thresholds saved in Firestore
+#### History
+- **Sensor charts:**
+  Line charts for temperature, humidity and CO2 over 1 hour, 7 days or 30 days with a configurable alert threshold line
+- **Statistics:**
+  Min, max and average values computed for the selected sensor and period
+- **Alert journal:**
+  Chronological log of all past alerts with timestamp and details
+#### Lot Report
+- **30-day report:**
+  Global risk score, sensor statistics and CSV export for the current period
+- **Historical snapshots:**
+  Visual silo timeline giving access to the 3 previous 30-day period reports
+- **CSV export:**
+  Full measurement history exportable for external analysis
+#### Profile
+- **Settings:**
+  Dark mode and push notifications preferences saved to Firestore and applied app-wide
+- **Multilingual support:**
+  Full French and English translations throughout the app, switchable from user profile
+- **Account management:**
+  Email update with verification, password reset and role change from the profile screen
+- **Quick access:**
+  Shortcuts to the module, history and report pages
