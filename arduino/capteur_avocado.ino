@@ -14,13 +14,11 @@
 #include <Adafruit_BME280.h>
 #include "esp_bt.h"
 
+
 // ───────────────────────────────────────
 //  SECRETS
 // ───────────────────────────────────────
-#define WIFI_SSID        "DESKTOP-KD11S5N 3095"
-#define WIFI_PASSWORD    "A:4713c4"
-#define DATABASE_URL     "https://agrosafe-4703b-default-rtdb.europe-west1.firebasedatabase.app"
-#define DATABASE_SECRET  "mypp4RxXy37HeeZjWQKkj24qriig0K6yuhDiEQsD"
+#include "secrets.h"
 
 // ───────────────────────────────────────
 //  PINS
