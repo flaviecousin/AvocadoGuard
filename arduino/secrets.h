@@ -1,4 +1,4 @@
-#define WIFI_SSID        "ton_réseau"
-#define WIFI_PASSWORD    "ton_mot_de_passe"
-#define DATABASE_URL     "ton_url"
-#define DATABASE_SECRET  "ton_secret"
+#define WIFI_SSID        "your_wifi_ssid"
+#define WIFI_PASSWORD    "your_wifi_password"
+#define DATABASE_URL     "your_databse_url"
+#define DATABASE_SECRET  "your_database_secret"
