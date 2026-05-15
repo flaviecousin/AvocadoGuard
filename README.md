@@ -258,3 +258,46 @@ users/{userId}
   Email update with verification, password reset and role change from the profile screen
 - **Quick access:**
   Shortcuts to the module, history and report pages
+
+## 🛡️ Features of Firebase and Firestore
+You need to secure your databases by adding rules.
+Rules for Firestore:
+```Bash
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+  	
+    // Collection users - chaque utilisateur accède uniquement à son propre document
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    
+    	// Pour sauvegarder les alertes
+      match /alertes/{alerteId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      
+      // Pour sauvegarder l'historique des mesures
+      match /mesures/{mesureId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+  }
+}
+```
+Rules for Firebase:
+```Bash
+{
+  "rules": {
+    "capteurs": {
+      "module1": {
+        "live": {
+          "$uid": {
+            ".read": "auth != null && auth.uid === $uid",
+            ".write": false
+          }
+        }
+      }
+    }
+  }
+}
+```
